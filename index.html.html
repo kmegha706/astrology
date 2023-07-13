@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>document</title>
+        <script type="text/javascript">
+            function age(){
+                var b =document.getElementById('a').value
+                var remaining =90-Number(b);
+                var days= (90*365)-(Number(b)*365);
+                var weeks=  (90*52)-(Number(b)*52);
+                var month= (90*12)-(Number(b)*12);
+                document.write(" you have "+days+"days,"+"<br/>"+weeks+" weeks,and"+"<br/>"+month+" monthleft"); 
+            }
+
+        </script>
+    </head>
+    <body style="background-image: url('C:Users/megha/Desktop/vs code/astrloger/download.jpeg');background-repeat: no-repeat;background-size: cover;font-size: 20px;"><br><br><br><br><br><br><br>
+       <h1 style="background-image: url('C:Users/megha/Desktop/vs code/astrloger/download.jpeg');background-repeat: no-repeat;background-size: cover;color: azure;box-shadow: 8px 8px 8px 8px black;text-align: center;">How Many Days Are Left In Your Life ?</h1>
+       <br><br><br><br><br>
+        <center>
+        <input id="a" style="font-size: 40px;border-left: hidden;border-top: hidden;box-shadow: 8px 8px 8px 8px black;background-color: lightgoldenrodyellow;border: solid orange;" type="text" placeholder ="Enter Age"> &nbsp;
+        <input style="font-size: 40px;border-radius: 200px;width: 180px;box-shadow: 8px 8px 8px 8px black;background-color: lightgoldenrodyellow;border: solid orange;" type="button" value="show"
+        onclick="age()"></center>
+    </body>
+</html>
